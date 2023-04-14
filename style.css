@@ -1,0 +1,113 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+#captcha-image:hover {
+    cursor: pointer;
+}
+body{
+    font-family:"Alkatra",sans-serif;
+    background:#f5f5f5;
+}
+.contact-form{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:90%;
+    max-width:450px;
+    background:#fff;
+    padding:20px 30px;
+    /* box-shadow:5px 5px 5px   black; */
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+}
+.contact-form .form-title{
+    font-family:"Montserrat",sans-serif;
+    text-align:center;
+    font-size:30px;
+    font-weight:600;
+    margin:10px 0px 10px;
+    color:#fff;
+    background-color:#4D4D4D;
+    padding:10px;
+    border-radius:5px;
+
+}
+.contact-form .form-input{
+    margin:10px 0px;
+}
+.message{
+    margin:3px;
+}
+.contact-form .form-input label,
+.contact-form .captcha label{
+    display:block;
+    font-size:15px;
+    color:#111;
+    margin-bottom:3px;
+}
+textarea{
+    resize: vertical;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #888;
+}
+.contact-form .form-input input{
+    width:100%;
+    padding:10px;
+    border:1px solid #888;
+    font-size:15px;
+}
+.contact-form .captcha{
+    margin:5px 0px;
+}
+.contact-form .captcha .preview{
+    color:#555;
+    width:100%;
+    text-align:center;
+    height:40px;
+    line-height:40px;
+    letter-spacing:8px;
+    border:1px dashed #888;
+    font-family:"monospace";
+}
+.contact-form .captcha .preview span{
+    display:inline-block;
+    user-select:none;
+}
+.contact-form  .captcha .captcha-form{
+    display:flex;
+    margin-top:20px;
+}
+.contact-form .captcha .captcha-form input{
+    width:100%;
+    padding:8px;
+    border:1px solid #888;
+}
+.contact-form .captcha .captcha-form .captcha-refresh{
+    width:40px;
+    border:none;
+    outline:none;
+    background: #888;
+    color:#eee;
+    cursor: pointer;
+}
+.contact-form #submit-btn{
+    margin-top:5px;
+    width:30%;
+    padding:10px;
+    border:none;
+    outline:none;
+    font-size:15px;
+    text-transform:uppercase;
+    background:#181823;;
+    color:#fff;
+    cursor: pointer;
+    border-radius:6px;
+}
+.btn{
+    text-align: center;
+}

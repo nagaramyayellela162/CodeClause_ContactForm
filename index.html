@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Form with CAPTCHA</title>
+        <!--Adding external css file  -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Adding the link of my fontawesome kit -->
+        <script src="https://kit.fontawesome.com/b3eb1ff5af.js" crossorigin="anonymous"></script>
+        <!-- adding the links for font families from google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Cedarville+Cursive&family=Marhey:wght@500&family=Montserrat&family=Poppins:wght@200&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <!-- adding my formspree mail link here -->
+            <form method="POST" action="https://formspree.io/f/xzbqkyal" id="my-form" >
+                <div class="contact-form">
+                    <div class="form-title">
+                        Contact Form
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-input">
+                        <label for="message">Message</label>
+                        <textarea rows="3" cols="50" name="message"></textarea>
+                    </div>
+                    <div class="captcha">
+                        <label for="captcha-input">Enter Captcha</label>
+                        <div class="preview"></div>
+                        <div class="captcha-form">
+                            <input type="text" id="captcha-form" placeholder="Enter captcha text">
+                            <button class="captcha-refresh">
+                                <i class="fa fa-refresh"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-input btn">
+                        <button id="submit-btn" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- adding required cdn for swal functionality -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- adding exterbak javascript file -->
+        <script src="script.js"></script>
+    </body>
+</html>
